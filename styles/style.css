@@ -1,0 +1,136 @@
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Mulish', sans-serif;
+}
+
+/* .header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+}
+
+.header__square-pic {
+  height: 568px;
+  width: 568px;
+}
+
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+} */
+
+/* HEADER */
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 56px;
+  padding-left: 191px;
+  padding-right: 192px;
+}
+
+.logo__image {
+  display: block;
+}
+
+.navigation{
+display: flex;
+align-items: center;
+}
+
+.navigation__list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navigation__item:not(:last-child){
+  margin-right: 40px;
+}
+
+.navigation__link{
+text-decoration: none;
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+color: #1F1534;
+opacity: 0.5;
+}
+
+.navigation__link_active_true {
+font-weight: 700;
+opacity: 1;
+}
+
+/* HEALTH */
+
+.health {
+min-height: 598px;
+padding-left: 190px;
+padding-right: 163px;
+padding-top: 85px;
+position: relative;
+}
+
+.health__title {
+max-width: 427px;
+margin: 0;
+margin-top: 100px;
+margin-bottom: 25px;
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 56px;
+}
+
+.health__subtitle {
+max-width: 443px;
+margin: 0;
+margin-bottom: 45px;
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 300;
+font-size: 21px;
+line-height: 32px;
+color: #7D7987;
+}
+
+.health__button{
+min-width: 200px;
+height: 56px;
+border: none;
+border-radius: 55px;
+background-color: #458FF6;
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+color: #FFFFFF;
+}
+
+.health__main-illustration {
+  display: block;
+  height: 598px;
+  position:absolute;
+  bottom: 7px;
+  right: 163px;
+  z-index: -1;
+}
+
+.health__decoration {
+  position: absolute;
+  left: 0;
+  top: 63px;
+}
