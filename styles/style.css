@@ -107,11 +107,15 @@ line-height: 32px;
 color: #7D7987;
 }
 
-.health__button{
-min-width: 200px;
+.button{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 200px;
 height: 56px;
 border: none;
 border-radius: 55px;
+text-decoration: none;
 background-color: #458FF6;
 font-family: 'Mulish';
 font-style: normal;
@@ -139,10 +143,13 @@ color: #FFFFFF;
 
 .services {
   padding: 185px 240px 0;
-  /* border: 1px solid red; */
+  position: relative;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
 }
 
-.services__title {
+.section-title {
 margin: 0;
 padding-bottom: 26px;
 position: relative;
@@ -154,7 +161,7 @@ line-height: 56px;
 text-align: center;
 }
 
-.services__title::after{
+.section-title::after{
   content: "";
   position: absolute;
   bottom: 0;
@@ -165,11 +172,11 @@ text-align: center;
   background-color: #000;
 }
 
-.services__heading {
+.section-heading {
 max-width: 952px;
 margin: 0 auto;
-margin-top: 32px;
-margin-bottom: 80px;
+padding-top: 32px;
+padding-bottom: 80px;
 font-family: 'Mulish';
 font-style: normal;
 font-weight: 300;
@@ -232,4 +239,79 @@ font-weight: 300;
 font-size: 16px;
 line-height: 28px;
 color: #7D7987;
+}
+
+.services__background {
+  background-image: url(../images/bg_element.png);
+  height: 968px;
+  width: 1119px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -133px;
+  top: 180px;
+  z-index: -1;
+}
+
+.button_type_bright {
+  border: 1.4px solid #458FF6;
+  background-color: #fff;
+  color: #458FF6;
+}
+
+.button_place_services {
+  margin: 72px auto 0;
+}
+
+.dots {
+  background-image: url(../images/element_services.png);
+  width: 132px;
+  height: 115px;
+}
+
+.dots_place_services {
+  position: absolute;
+  top: 730px;
+  right: 188px;
+  z-index: -1;
+}
+
+/* PROVIDERS */
+
+.providers {
+  padding: 220px 164px 0 135px;
+}
+
+.card {
+  display: flex;
+  max-width: 1200px;
+}
+
+.card__image {
+  display: block;
+  margin-right: 142px;
+}
+
+.card__box {
+  padding-top: 57px;
+}
+
+.section-title_place_providers {
+text-align: left;
+}
+
+.section-title_place_providers::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 56px;
+  height: 2px;
+  background-color: #000;
+}
+
+.section-heading_place_providers {
+text-align: left;
+padding-bottom: 37px;
 }
